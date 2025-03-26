@@ -1,0 +1,34 @@
+{
+    "name": "sysborg/kingsms",
+    "description": "Integração simples com a API da KingSMS para laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sysborg\\KingSMS\\Providers": "Providers/",
+            "Sysborg\\KingSMS\\Services": "Services/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sysborg",
+            "email": "contato@sysborg.com.br"
+        },
+        {
+            "name": "Anderson Arruda",
+            "email": "andmarruda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": ">=9.0",
+        "laravel/sanctum": ">=2.11"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sysborg\\KingSMS\\Providers\\KingSMSProvider"
+            ]
+        }
+    }
+}
