@@ -5,8 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sysborg\\KingSMS\\Providers": "Providers/",
-            "Sysborg\\KingSMS\\Services": "Services/"
+            "Sysborg\\KingSMS\\Providers\\": "Providers/",
+            "Sysborg\\KingSMS\\Services\\": "Services/"
         }
     },
     "authors": [
