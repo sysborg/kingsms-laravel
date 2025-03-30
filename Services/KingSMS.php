@@ -1,6 +1,6 @@
 <?php
 
-namespace Sysborg\KingSMS\Service;
+namespace Sysborg\KingSMS\Services;
 use Illuminate\Support\Facades\Http;
 
 class KingSMS {
