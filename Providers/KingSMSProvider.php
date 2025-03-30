@@ -4,7 +4,7 @@ namespace Sysborg\KingSMS\Providers;
 use Illuminate\Support\ServiceProvider;
 use Sysborg\KingSMS\Service\KingSMS;
 
-class SBFocusNFeProvider extends ServiceProvider
+class KingSMSProvider extends ServiceProvider
 {
     /**
      * Register any application services.
