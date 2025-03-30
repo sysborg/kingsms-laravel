@@ -11,7 +11,7 @@ class KingSMSProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../../config/focusnfe.php', 'focusnfe');
+        $this->mergeConfigFrom(__DIR__.'/../config/focusnfe.php', 'focusnfe');
     }
 
     /**
