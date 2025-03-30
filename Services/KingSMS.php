@@ -6,6 +6,27 @@ use Illuminate\Support\Facades\Http;
 class KingSMS 
 {
     /**
+     * URL da API
+     * 
+     * @var string
+     */
+    private string $url;
+
+    /**
+     * Login da KingSMS
+     * 
+     * @var string
+     */
+    private string $login;
+
+    /**
+     * Token da KingSMS
+     * 
+     * @var string
+     */
+    private string $token;
+
+    /**
      * Constroi a classe de envio de sms da KingSMS
      * 
      * @return void
