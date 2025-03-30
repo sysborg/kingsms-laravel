@@ -37,9 +37,9 @@ The default API URL is already set, but you can override it if needed.
 ### Send SMS
 
 ```php
-use Sysborg\KingSMS\Services\KingSMS;
+use Facades\Sysborg\KingSMS\Services\KingSMS;
 
-$response = (new KingSMS())->sendSMS(
+$response = KingSMS::sendSMS(
     '5598999999999', // Recipient phone number
     'Your message goes here', // Message content
     'Optional Campaign Name',
@@ -51,19 +51,19 @@ $response = (new KingSMS())->sendSMS(
 ### Get SMS Report
 
 ```php
-$response = (new KingSMS())->getRelatorio('your_sms_id');
+$response = KingSMS::getRelatorio('your_sms_id');
 ```
 
 ### Check Balance
 
 ```php
-$response = (new KingSMS())->getSaldo();
+$response = KingSMS::getSaldo();
 ```
 
 ### Get SMS Replies
 
 ```php
-$response = (new KingSMS())->getResposta('read'); // or 'unread'
+$response = KingSMS::getResposta('read'); // or 'unread'
 ```
 
 ---
