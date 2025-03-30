@@ -3,7 +3,8 @@
 namespace Sysborg\KingSMS\Services;
 use Illuminate\Support\Facades\Http;
 
-class KingSMS {
+class KingSMS 
+{
     /**
      * Constroi a classe de envio de sms da KingSMS
      * 
@@ -56,6 +57,7 @@ class KingSMS {
 
         $response = Http::get($this->url, $data)->json();
         return $response;
+    }
 
     /**
      * Consultar saldo
