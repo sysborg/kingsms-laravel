@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "Sysborg\\KingSMS\\Providers\\": "Providers/",
-            "Sysborg\\KingSMS\\Services\\": "Services/"
+            "Sysborg\\KingSMS\\Services\\": "Services/",
+            "Sysborg\\KingSMS\\Channels\\": "Channels/"
         }
     },
     "authors": [
