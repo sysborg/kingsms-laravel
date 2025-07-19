@@ -72,7 +72,7 @@ $response = KingSMS::getResposta('read'); // or 'unread'
 
 You can also send SMS using Laravel's notification system.
 
-### Add `toKingsms()` method in your Notification:
+### 1. Add `toKingsms()` method in your Notification:
 
 ```php
 public function via($notifiable)
@@ -83,6 +83,19 @@ public function via($notifiable)
 public function toKingsms($notifiable)
 {
     return 'This is your notification message';
+}
+```
+
+### 2. Your Notifiable Model must return the phone number
+
+To let Laravel know which phone number to use, your notifiable model (usually User) must implement the following method:
+
+```php
+public function routeNotificationForKingsms(): ?string
+{
+    // Example: clean Brazilian cellphone format and prepend +55
+    $phone = preg_replace('/\D/', '', $this->celular); // or $this->phone
+    return $phone ? '+55' . $phone : null;
 }
 ```
 
