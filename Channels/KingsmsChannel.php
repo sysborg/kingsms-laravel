@@ -9,7 +9,7 @@ class KingsmsChannel
     public function send($notifiable, Notification $notification)
     {
         $message = $notification->toKingsms($notifiable);
-        $phone = $notifiable->phone;
+        $phone = $notifiable->routeNotificationForKingsms();
         KingSMS::sendSms($phone, $message);
     }
 }
